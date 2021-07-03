@@ -4,6 +4,8 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class APX3_2021_1_Q2 {
+//Aluno: Leonardo Barros Egito da Silva
+//Matricula: 19113050001
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -27,6 +29,8 @@ class Contato{
 	
 	String nome;
 	ArrayList<Mensagem> mensagens = new ArrayList<Mensagem>();
+	//Resolvi deixar a variavel ultimoGrupo, embora ela nao seja necessaria para a resolucao
+	//dessa questao, ela mostra o caminho que percorri
 	Grupo ultimoGrupo = null;
 	ArrayList<Grupo> meusGrupos = new ArrayList<Grupo>();
 	
@@ -35,7 +39,7 @@ class Contato{
 	}
 	
 	public void enviaMensagem(Contato destino, String mensagem){
-		//Mensagem mensagem = new Mensagem();
+
 		new Mensagem(this, destino, mensagem);
 		
 	}
@@ -68,12 +72,8 @@ class Contato{
 		
 		for(Grupo meuGrupo : meusGrupos) {
 			retorno += meuGrupo.toString();
-//			System.out.println("teste grupo");
-//			System.out.println(meuGrupo);
 		}
-//		if(ultimoGrupo != null) {
-//			retorno += ultimoGrupo.toString();
-//		}
+
 		return retorno;
 	}
 	
@@ -81,7 +81,6 @@ class Contato{
 
 class Grupo extends Contato{
 	
-	//String nome;
 	ArrayList<Contato> contatosDoGrupo = new ArrayList<Contato>();
 	
 	Grupo(String name){
@@ -89,7 +88,8 @@ class Grupo extends Contato{
 	}
 	
 	public void adicionaContato(Contato contato){
-		//contato.meusGrupos.add(this);
+		//Resolvi deixar a variavel ultimoGrupo, embora ela nao seja necessaria para a resolucao
+		//dessa questao, ela mostra o caminho que percorri
 		contato.ultimoGrupo = this;
 		contato.meusGrupos.add(this);
 		contatosDoGrupo.add(contato);
@@ -115,3 +115,4 @@ class Mensagem{
 	}
 	
 }
+//fim
