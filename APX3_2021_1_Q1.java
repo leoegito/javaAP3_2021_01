@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class APX3_2021_1_Q1 {
-//Aluno: Leonardo Barros Egito da Silva
-//Matricula: 19113050001
+//Aluno: Leonardo Egito
+//Matricula: x
 
 	public static void main(String[] args)throws IOException {
 		// TODO Auto-generated method stub
@@ -28,7 +28,7 @@ public class APX3_2021_1_Q1 {
 				//le linhas  do arquivo
 				while(linha != null) {
 					String numerosTemp[] = linha.split(" ");
-					//Considerando que sempre ser„o 2 conjuntos a serem comparados, sempre 2 arquivos de entradas
+					//Considerando que sempre ser√£o 2 conjuntos a serem comparados, sempre 2 arquivos de entradas
 					//A solucao foi adicionar os conjuntos A e B como uma string. Porem, se fossem mais arquivos, usaria o iterador
 					//Para declarar o nome dos conjuntos. No caso dessa questao achei que nao seria necessario pois sempre
 					//e uma comparacao de 2 arquivos
